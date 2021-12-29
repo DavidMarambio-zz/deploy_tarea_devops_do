@@ -1,7 +1,7 @@
 
 # Creamos un dominio nuevo
 resource "digitalocean_domain" "project" {
-  name = "dmsenv.com"
+  name = var.domain
 }
 
 # Add a record to the domain

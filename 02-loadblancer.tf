@@ -11,4 +11,9 @@ resource "digitalocean_loadbalancer" "public" {
     target_protocol = "http"
   }
 
+  healthcheck {
+    port     = 30200
+    protocol = "tcp"
+  }
+
 }
